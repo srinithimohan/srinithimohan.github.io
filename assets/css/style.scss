@@ -298,6 +298,17 @@ a.buttons:hover {
 	text-decoration: none;
 }
 
+// buttons test
+ .icon-link svg {
+  height: 30px;
+  width: 30px;
+  fill: #666; /* default color */
+  transition: fill 0.3s;
+}
+
+.icon-link svg:hover path {
+  fill: #000; /* hover color */
+}
 
 /* Section - for main page content */
 
