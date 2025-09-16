@@ -36,7 +36,7 @@ body {
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: #232323;
-	background-color: #defcfc;
+	background-color: #E1DD8F;
 	margin: 0;
 	line-height: 1.8em;
 	-webkit-font-smoothing: antialiased;
@@ -218,10 +218,10 @@ td {
 }
 
 
-/* Header */
+/*  */
 
 header {
-	background-color: #171717;
+	background-color: #E19182;
 	color: #FDFDFB;
   width:170px;
   float:left;
@@ -298,33 +298,23 @@ a.buttons:hover {
 	text-decoration: none;
 }
 
-// buttons test
- .icon-link svg {
-  height: 30px;
-  width: 30px;
-  fill: #666; /* default color */
-  transition: fill 0.3s;
-}
-
-.icon-link svg:hover path {
-  fill: #000; /* hover color */
-}
-
 .links {
   display: flex;
-  gap: 20px;
-  padding: 20px;
+  // gap: 20px;
+  // padding: 20px;
+  margin: 0px;
+  justify-content: space-around;
 }
 
 .links svg {
   height: 30px;
   width: 30px;
-  fill: #666; /* default color */
+  fill: #4C86A8; /* default color */
   transition: fill 0.3s;
 }
 
 .links svg:hover path {
-  fill: #000; /* hover color */
+  fill: #477890; /* hover color */
 }
 
 
