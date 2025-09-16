@@ -52,6 +52,10 @@ p, ul, ol, table, dl {
   margin:0 0 22px;
 }
 
+.socials{
+	margin: 10px;
+}
+
 h1, h2, h3 {
 	font-family: Arvo, Monaco, serif;
   line-height:1.3;
@@ -300,10 +304,10 @@ a.buttons:hover {
 
 .links {
   display: flex;
-  // gap: 20px;
-  // padding: 20px;
+  gap: 20px;
+// padding: 20px;
   margin: 0px;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .links svg {
@@ -315,6 +319,10 @@ a.buttons:hover {
 
 .links svg:hover path {
   fill: #477890; /* hover color */
+}
+
+.pink{
+	color: #E0777D;
 }
 
 
