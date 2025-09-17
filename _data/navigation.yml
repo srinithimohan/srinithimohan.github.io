@@ -1,8 +1,8 @@
 - name: About 
-  link: index.html
+  link: /index.html
 - name: Projects
-  link: pages/projects.html
+  link: /pages/projects.html
 - name: Resume
-  link: pages/resume.html
+  link: /pages/resume.html
 - name: Blog
-  link: pages/blog.html
+  link: /pages/blog.html
