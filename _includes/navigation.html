@@ -1,0 +1,14 @@
+<nav id="navbar">
+	<div id="nav-items">
+		{% for item in site.data.navigation %}
+<span class="nav-item">
+  <a href="{{ item.link }}" {% if page.url == item.link %} class="current-page" {% endif %}>
+    {% if item.icon %}
+      <img src="{{ item.icon }}" alt="{{ item.name }} icon" class="nav-icon">
+    {% endif %}
+    {{ item.name }}
+  </a>
+</span>
+{% endfor %}
+	</div>
+</nav>
