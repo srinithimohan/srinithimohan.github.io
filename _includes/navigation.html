@@ -1,14 +1,14 @@
 <nav id="navbar">
-	<div id="nav-items">
-		{% for item in site.data.navigation %}
-<span class="nav-item">
-  <a href="{{ item.link }}" {% if page.url == item.link %} class="current-page" {% endif %}>
-    {% if item.icon %}
-      <img src="{{ item.icon }}" alt="{{ item.name }} icon" class="nav-icon">
-    {% endif %}
-    {{ item.name }}
-  </a>
-</span>
-{% endfor %}
-	</div>
+<nav id="sidebar">
+  <ul>
+    {% for item in site.data.navigation %}
+      <li class="nav-item {% if page.url == item.link %}current-page{% endif %}">
+        <a href="{{ item.link }}">
+          <img src="{{ item.icon }}" alt="{{ item.name }} icon" class="nav-icon">
+          <span class="nav-text">{{ item.name }}</span>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</nav>
 </nav>
