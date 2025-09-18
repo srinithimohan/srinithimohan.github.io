@@ -340,18 +340,13 @@ a.buttons:hover {
 
 // vertical sidebar
 /* Sidebar container */
-#sidebar {
-  position: fixed;       /* stays on the left while scrolling */
-  top: 0;
-  right: 0;
-  width: 180px;          /* adjust as needed */
-  height: 100%;
-  // background-color: #fff;
-  padding-top: 50px;     /* space from top */
+#sidebar .nav-item a {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  // border-right: 1px solid #ddd; /* subtle separation */
+  flex-direction: column;  /* stack vertically */
+  align-items: center;     /* center horizontally */
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
 }
 
 /* Nav list */
@@ -378,9 +373,15 @@ a.buttons:hover {
 
 /* Icon size */
 .nav-icon {
-  width: 24px;
-  height: 24px;
-  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border: none !important;
+}
+
+#sidebar .nav-text {
+  font-size: 14px;                    /* adjust size */
+  font-weight: 600;                   /* optional */
+  color: #333;                        /* change color */
 }
 
 /* Highlight current page */
