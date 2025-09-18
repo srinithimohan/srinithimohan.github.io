@@ -343,7 +343,7 @@ a.buttons:hover {
 #sidebar {
   position: fixed;       /* stays on the left while scrolling */
   top: 0;
-  left: 0;
+  right: 0;
   width: 180px;          /* adjust as needed */
   height: 100%;
   // background-color: #fff;
@@ -351,7 +351,7 @@ a.buttons:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-right: 1px solid #ddd; /* subtle separation */
+  // border-right: 1px solid #ddd; /* subtle separation */
 }
 
 /* Nav list */
