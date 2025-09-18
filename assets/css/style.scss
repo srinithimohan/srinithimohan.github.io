@@ -380,7 +380,7 @@ a.buttons:hover {
 /* Icon size */
 .nav-icon {
   width: 50px;
-  height: 50px;
+  // height: 50px;
   border: none !important;
   margin: 0 !important;   /* remove top/bottom margins */
   padding: 0 !important;  /* remove padding */
@@ -404,6 +404,7 @@ a.buttons:hover {
 
 section {
   width:650px;
+  margin-right: 200px;
   float:right;
   padding-bottom:50px;
 }
