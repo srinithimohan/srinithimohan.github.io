@@ -322,13 +322,6 @@ a.buttons:hover {
 	color: #E0777D;
 }
 
-.nav-icon {
-  width: 18px;
-  height: 18px;
-  margin-right: 6px;
-  vertical-align: middle;
-}
-
 .main-wrapper {
   display: flex;
 }
@@ -389,6 +382,9 @@ a.buttons:hover {
   width: 50px;
   height: 50px;
   border: none !important;
+  margin: 0 !important;   /* remove top/bottom margins */
+  padding: 0 !important;  /* remove padding */
+  display: block;         /* makes vertical alignment cleaner */
 }
 
 #sidebar .nav-text {
