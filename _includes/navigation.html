@@ -4,7 +4,7 @@
     {% for item in site.data.navigation %}
       <li class="nav-item {% if page.url == item.link %}current-page{% endif %}">
         <a href="{{ item.link }}">
-          <img src="{{ item.icon }}" alt="{{ item.name }} icon" class="nav-icon">
+          <<img src="{{ item.icon }}" alt="{{ item.name }} icon" class="nav-icon {{ item.class }}">
           <span class="nav-text">{{ item.name }}</span>
         </a>
       </li>
