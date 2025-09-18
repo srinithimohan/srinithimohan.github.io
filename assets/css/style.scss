@@ -324,6 +324,7 @@ a.buttons:hover {
 
 .main-wrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 .page-content {
@@ -404,7 +405,6 @@ a.buttons:hover {
 
 section {
   width:650px;
-  margin-right: 200px;
   float:right;
   padding-bottom:50px;
 }
