@@ -380,7 +380,7 @@ a.buttons:hover {
 
 /* Icon size */
 .nav-icon {
-  width: 50px;
+  // width: 50px;
   // height: 50px;
   border: none !important;
   margin: 0 !important;   /* remove top/bottom margins */
@@ -399,6 +399,23 @@ a.buttons:hover {
   font-weight: bold;
   // color: #000; /* optional highlight color */
 }
+
+.home-icon {
+  width: 61px;
+}
+
+.projects-icon {
+  width: 60px;
+}
+
+.resume-icon{
+  width: 55px;
+}
+
+.blog-icon{
+  width: 60px;
+}
+
 
 
 /* Section - for main page content */
