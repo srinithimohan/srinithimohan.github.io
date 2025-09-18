@@ -36,7 +36,11 @@ body {
   font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 14px;
 	color: #232323;
-	background-color: #E1DD8F;
+	// background-color: #e1c48b;
+	  background-image: url('assets/yellow_bg.png'); /* put your image path here */
+	  background-size: cover;       /* make it cover the entire screen */
+	  background-repeat: no-repeat; /* prevent tiling */
+	  background-position: center;  /* center it */
 	margin: 0;
 	line-height: 1.8em;
 	-webkit-font-smoothing: antialiased;
