@@ -1,8 +1,12 @@
 - name: Home 
   link: /index.html
+  icon: /assets/pink_file.png
 - name: Projects
   link: /pages/projects.html
+  icon: /assets/pink_2_file.png
 - name: Resume
   link: /pages/resume.html
+  icon: /assets/purple_file.png
 - name: Blog
   link: /pages/blog.html
+  icon: /assets/dark_purple_file.png
