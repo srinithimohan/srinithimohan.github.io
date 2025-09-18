@@ -340,6 +340,19 @@ a.buttons:hover {
 
 // vertical sidebar
 /* Sidebar container */
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;          /* 👈 now it’s on the left */
+  width: 180px;
+  height: 100%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 #sidebar .nav-item a {
   display: flex;
   flex-direction: column;  /* stack vertically */
