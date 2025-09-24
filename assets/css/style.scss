@@ -406,6 +406,87 @@ a.buttons:hover {
   // color: #000; /* optional highlight color */
 }
 
+/* Container for all projects */
+.projects-list {
+  max-width: 700px;
+  margin: 0 auto;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+/* Each project card */
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Header of each project (clickable) */
+.project-header {
+  background: #f9f9f9;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.project-header:hover {
+  background: #f1f1f1;
+}
+
+/* Project date styling */
+.project-date {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Project title styling */
+.project-title {
+  font-weight: bold;
+}
+
+/* Technology stack */
+.project-tech {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* GitHub icon link */
+.github-icon {
+  margin-top: 0.5rem;
+  width: 24px;
+}
+
+.github-icon svg {
+  width: 24px;
+  height: 24px;
+  fill: #333;
+  transition: fill 0.2s ease;
+}
+
+.github-icon:hover svg {
+  fill: #0366d6;
+}
+
+/* Collapsible content (hidden by default) */
+.project-body {
+  display: none;
+  padding: 1rem;
+  background: #fff;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Show content when card is open */
+.project-card.open .project-body {
+  display: block;
+}
+
+
+
 .home-icon {
   width: 69px;
 }
