@@ -414,7 +414,93 @@ a.buttons:hover {
 }
 
 /* Each project card */
-.project-header { background: #f9f9f9; padding: 1rem; cursor: pointer; display: flex; flex-direction: column; gap: 0.3rem; } .project-header:hover { background: #ebdfe3; } /* Project date styling */ .project-date { font-size: 0.9rem; color: #515575; } /* Project title styling */ .project-title { font-weight: bold; color: #355070; } /* Technology stack */ .project-tech { font-size: 0.9rem; color: #6D597A; } /* GitHub icon link */ .github-icon { margin-top: 0.5rem; width: 24px; } .github-icon svg { width: 24px; height: 24px; fill: #333; transition: fill 0.2s ease; } .github-icon:hover svg { fill: #E19182; } /* Collapsible content (hidden by default) */ .project-body { display: none; padding: 1rem; background: #fff; color: #355070; font-size: 0.95rem; line-height: 1.5; } /* Show content when card is open */ .project-card.open .project-body { display: block; }
+/* Project card container */
+.project-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Project header */
+.project-header {
+  background: #f9f9f9;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between; /* text left, icon right */
+  align-items: flex-start;
+  position: relative;
+  transition: background 0.2s ease;
+}
+
+.project-header:hover {
+  background: #ebdfe3;
+}
+
+/* Text container on left */
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+/* Project date styling */
+.project-date {
+  font-size: 0.85rem;
+  color: #515575;
+}
+
+/* Project title styling */
+.project-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #355070;
+}
+
+/* Technology stack */
+.project-tech {
+  font-size: 0.9rem;
+  color: #6D597A;
+}
+
+/* GitHub icon pinned top-right */
+.github-icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 1rem;
+  flex-shrink: 0;
+}
+
+.github-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: #333;
+  transition: fill 0.2s ease;
+}
+
+.github-icon:hover svg {
+  fill: #E19182;
+}
+
+/* Collapsible content (hidden by default) */
+.project-body {
+  display: none;
+  padding: 1rem;
+  background: #fff;
+  color: #355070;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Show content when card is open */
+.project-card.open .project-body {
+  display: block;
+}
+
 
 .home-icon {
   width: 69px;
