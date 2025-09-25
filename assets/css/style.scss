@@ -430,9 +430,9 @@ a.buttons:hover {
   padding: 1rem;
   cursor: pointer;
   display: flex;
-  justify-content: space-between; /* text left, icon right */
-  align-items: flex-start;
-  position: relative;
+  flex-direction: column; /* stack text vertically */
+  gap: 0.3rem;           /* spacing between text elements */
+  position: relative;     /* allows icon to be absolute */
   transition: background 0.2s ease;
 }
 
