@@ -11,9 +11,11 @@ title: projects
   {% for project in sorted_projects %}
     <div class="project-card">
       <div class="project-header" onclick="this.parentElement.classList.toggle('open')">
+        <div class="project-info-test">
         <span class="project-date">{{ project.display_date }}</span>
         <span class="project-title">{{ project.title }}</span>
         <span class="project-tech">{{ project.tech }}</span>
+        </div>
         {% if project.github %}
           <a href="{{ project.github }}" target="_blank" class="github-icon">
             <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
