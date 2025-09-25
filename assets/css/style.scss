@@ -429,35 +429,43 @@ a.buttons:hover {
   padding: 1rem;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
+  justify-content: space-between; /* pushes text left, icon right */
+  align-items: center; /* vertical centering */
 }
 
 .project-header:hover {
-  background: #f1f1f1;
+  background: #ebdfe3;
+}
+
+/* Left side text container */
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 /* Project date styling */
 .project-date {
   font-size: 0.9rem;
-  color: #666;
+  color: #515575;
 }
 
 /* Project title styling */
 .project-title {
   font-weight: bold;
+  color: #355070;
 }
 
 /* Technology stack */
 .project-tech {
   font-size: 0.9rem;
-  color: #444;
+  color: #6D597A;
 }
 
 /* GitHub icon link */
 .github-icon {
-  margin-top: 0.5rem;
   width: 24px;
+  flex-shrink: 0; /* prevents shrinking */
 }
 
 .github-icon svg {
@@ -468,14 +476,16 @@ a.buttons:hover {
 }
 
 .github-icon:hover svg {
-  fill: #0366d6;
+  fill: #E19182;
 }
+
 
 /* Collapsible content (hidden by default) */
 .project-body {
   display: none;
   padding: 1rem;
   background: #fff;
+  color: #355070;
   font-size: 0.95rem;
   line-height: 1.5;
 }
