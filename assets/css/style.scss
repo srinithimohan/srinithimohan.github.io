@@ -429,45 +429,53 @@ a.buttons:hover {
   padding: 1rem;
   cursor: pointer;
   display: flex;
-  justify-content: space-between; /* pushes text left, icon right */
-  align-items: center; /* vertical centering */
+  justify-content: space-between; /* left info vs right icon */
+  align-items: center;
 }
 
 .project-header:hover {
-  background: #ebdfe3;
+  background: #f9f9f9;
 }
 
+/* Stack the date, title, and tech vertically */
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
 
-.project-header:hover { 
-	background: #f9f9f9; 
-} /* Project date styling */ 
+.project-date {
+  font-size: 0.9rem;
+  color: #515575;
+}
 
-.project-date { 
-	font-size: 0.9rem; color: #515575; 
-} 
+.project-title {
+  font-weight: bold;
+  color: #355070;
+}
 
-/* Project title styling */ 
+.project-tech {
+  font-size: 0.9rem;
+  color: #6D597A;
+}
 
-.project-title { 
-	font-weight: bold; color: #355070; 
-} 
-/* Technology stack */ 
-
-.project-tech { 
-	font-size: 0.9rem; color: #6D597A; 
-} /* GitHub icon link */ 
-
-.github-icon { 
-	margin-top: 0.5rem; width: 24px; 
-} 
+/* GitHub icon styling */
+.github-icon {
+  width: 24px;
+  flex-shrink: 0; /* prevent squishing */
+}
 
 .github-icon svg {
-	width: 24px; height: 24px; fill: #333; transition: fill 0.2s ease; 
-	
-} .github-icon:hover svg { 
-	fill: #E19182; 
+  width: 24px;
+  height: 24px;
+  fill: #333;
+  transition: fill 0.2s ease;
+}
 
-} /* Collapsible content (hidden by default) */ 
+.github-icon:hover svg {
+  fill: #E19182;
+}
+ /* Collapsible content (hidden by default) */ 
 
 .project-body { 
 	display: none; padding: 1rem; background: #fff; color: #355070; font-size: 0.95rem; line-height: 1.5; 
