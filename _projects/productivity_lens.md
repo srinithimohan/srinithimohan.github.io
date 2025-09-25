@@ -2,6 +2,7 @@
 title: "Productivity Lens"
 layout: default
 date: "September 2025"
+display_date: "September 2025"
 tech: "Python, Pandas, Numpy, Colab"
 github: "https://github.com/srinithimohan/productivity-lens"
 ---
