@@ -462,9 +462,14 @@ a.buttons:hover {
 /* GitHub icon styling */
 .github-icon {
   width: 24px;
-  flex-shrink: 0; /* prevent squishing */
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* prevents squishing */
 }
 
+/* SVG stays full size */
 .github-icon svg {
   width: 24px;
   height: 24px;
@@ -475,6 +480,7 @@ a.buttons:hover {
 .github-icon:hover svg {
   fill: #E19182;
 }
+
  /* Collapsible content (hidden by default) */ 
 
 .project-body { 
