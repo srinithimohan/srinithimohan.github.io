@@ -425,15 +425,20 @@ a.buttons:hover {
 }
 
 /* Project header */
-.project-header {
-  background: #f9f9f9;
-  padding: 1rem;
-  cursor: pointer;
-  display: flex;
+.project-header { 
+	background: #f9f9f9; 
+	padding: 1rem; 
+	cursor: pointer; 
+	display: flex; 
+	justify-content: space-between; /* text left, icon right */ 
+	align-items: flex-start; 
+	position: relative; 
+	transition: background 0.2s ease; 
+}
+
+.project-info-test{
   flex-direction: column; /* stack text vertically */
-  gap: 0.3rem;           /* spacing between text elements */
-  position: relative;     /* allows icon to be absolute */
-  transition: background 0.2s ease;
+  gap: 0.3rem;    
 }
 
 .project-header:hover {
