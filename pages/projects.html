@@ -35,9 +35,8 @@ title: projects
         {% endif %}
       </div>
       <div class="project-body">
-        {{ project.content }}
+        {{ project.content | markdownify }}
       </div>
     </div>
   {% endfor %}
 </div>
-
