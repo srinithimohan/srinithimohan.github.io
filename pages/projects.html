@@ -6,14 +6,6 @@ title: projects
 <h1>Projects</h1>
 <p>click on each project to learn more!</p>
 
----
-layout: default
-title: projects
----
-
-<h1>Projects</h1>
-<p>click on each project to learn more!</p>
-
 <div class="projects-list">
   {% assign sorted_projects = site.projects | sort: "date" | reverse %}
   {% for project in sorted_projects %}
