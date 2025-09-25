@@ -2,6 +2,7 @@
 title: "Star Classification through Machine Learning models"
 layout: default
 date: "June 2024"
+display_date: June 2024
 tech: "Python, Pandas, Scikit-learn, Colab"
 github: "https://github.com/srinithimohan/star-classification-through-ml-models"
 ---
