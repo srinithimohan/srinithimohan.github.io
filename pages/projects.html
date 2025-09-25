@@ -11,7 +11,7 @@ title: projects
   {% for project in sorted_projects %}
     <div class="project-card">
       <div class="project-header" onclick="this.parentElement.classList.toggle('open')">
-        <span class="project-date">{{ project.date }}</span>
+        <span class="project-date">{{ project.display_date }}</span>
         <span class="project-title">{{ project.title }}</span>
         <span class="project-tech">{{ project.tech }}</span>
         {% if project.github %}
