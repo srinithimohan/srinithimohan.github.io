@@ -6,10 +6,10 @@
   link: /pages/projects.html
   icon: /assets/pink_2_file.png
   class: projects-icon
-- name: resume
-  link: /pages/resume.html
-  icon: /assets/purple_file.png
-  class: resume-icon
+# - name: resume
+#   link: /pages/resume.html
+#   icon: /assets/purple_file.png
+#   class: resume-icon
 - name: blog
   link: /pages/blog.html
   icon: /assets/dark_purple_file.png
