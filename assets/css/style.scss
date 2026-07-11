@@ -188,9 +188,10 @@ img {
 }
 
 .file-nav {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-  gap: 30px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
   margin-top: 8px;
 }
 
@@ -198,7 +199,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 2px;
   color: var(--ink);
   text-align: center;
 }
@@ -208,8 +209,8 @@ img {
 }
 
 .file-item .folder-icon {
-  width: 38px;
-  height: 38px;
+  width: 60px;
+  height: 60px;
   color: var(--plum);
   transition: color 0.18s ease, transform 0.18s ease;
 }
