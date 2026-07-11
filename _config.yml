@@ -1,10 +1,11 @@
+title: Srinithi Mohan
+description: CS student @ UNC-Chapel Hill — cybersecurity, quant finance, AI/ML, robotics, software dev.
 
-
-theme: jekyll-theme-dinky
-
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
 
 collections:
   projects:
     output: false
-
 

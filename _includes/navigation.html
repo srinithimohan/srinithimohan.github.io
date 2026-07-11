@@ -1,14 +1,13 @@
-<nav id="navbar">
-<nav id="sidebar">
-  <ul>
+<header class="dock-bar">
+  <a class="dock-home" href="{{ '/index.html' | relative_url }}">Srinithi Mohan</a>
+  <nav class="dock-nav">
     {% for item in site.data.navigation %}
-      <li class="nav-item {% if page.url == item.link %}current-page{% endif %}">
-        <a href="{{ item.link }}">
-          <img src="{{ item.icon }}" alt="{{ item.name }} icon" class="nav-icon {{ item.class }}">
-          <span class="nav-text">{{ item.name }}</span>
+      {% unless item.link == '/index.html' %}
+        <a class="dock-item {% if page.url == item.link %}current{% endif %}" href="{{ item.link | relative_url }}">
+          {% include folder-icon.html %}
+          <span>{{ item.name }}</span>
         </a>
-      </li>
+      {% endunless %}
     {% endfor %}
-  </ul>
-</nav>
-</nav>
+  </nav>
+</header>

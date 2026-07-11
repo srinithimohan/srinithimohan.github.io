@@ -1,16 +1,9 @@
-- name: home 
+- name: home
   link: /index.html
-  icon: /assets/pink_file.png
-  class: home-icon
 - name: projects
   link: /pages/projects.html
-  icon: /assets/pink_2_file.png
-  class: projects-icon
+# resume is built and styled — add your PDF to assets/ and uncomment to bring it back
 # - name: resume
 #   link: /pages/resume.html
-#   icon: /assets/purple_file.png
-#   class: resume-icon
 - name: blog
   link: /pages/blog.html
-  icon: /assets/dark_purple_file.png
-  class: blog-icon

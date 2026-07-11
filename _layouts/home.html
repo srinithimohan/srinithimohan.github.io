@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% seo %}
+    <link rel="icon" type="image/png" href="/assets/star.png">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <main class="home-grid">
+
+      <section class="home-col home-col--intro">
+        <div>
+          <h1 class="home-name">Srinithi Mohan</h1>
+          <p class="home-tagline">CS student, UNC-Chapel Hill.<br>building weird &amp; useful things.</p>
+        </div>
+        {% include social-links.html %}
+      </section>
+
+      <section class="home-col home-col--about">
+        <p class="eyebrow">who i am</p>
+        <div class="home-bio">{{ content }}</div>
+
+        <p class="eyebrow">what i'm into</p>
+        <ul class="pill-list">
+          <li class="pill">cybersecurity</li>
+          <li class="pill">quant finance</li>
+          <li class="pill">ai / ml</li>
+          <li class="pill">robotics</li>
+          <li class="pill">software dev</li>
+        </ul>
+      </section>
+
+      <section class="home-col home-col--nav">
+        <p class="eyebrow">explore</p>
+        <nav class="file-nav">
+          {% for item in site.data.navigation %}
+            {% unless item.link == '/index.html' %}
+              <a class="file-item" href="{{ item.link | relative_url }}">
+                {% include folder-icon.html %}
+                <span class="file-label">{{ item.name }}</span>
+              </a>
+            {% endunless %}
+          {% endfor %}
+        </nav>
+      </section>
+
+      <p class="home-footer">made with <span style="color: var(--rose);">&hearts;</span> by Srinithi Mohan &copy; 2026</p>
+    </main>
+  </body>
+</html>
