@@ -111,7 +111,7 @@ img {
 .home-tagline {
   color: var(--muted);
   font-size: 14.5px;
-  margin-top: 12px;
+  margin-top: 20px;
   max-width: 260px;
   line-height: 1.6;
 }
@@ -119,7 +119,7 @@ img {
 .social-links {
   display: flex;
   gap: 12px;
-  margin-top: 12px;
+  margin-top: 20px;
 }
 
 .social-btn {
@@ -190,7 +190,7 @@ img {
 .file-nav {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 28px;
   margin-top: 8px;
 }
@@ -258,7 +258,7 @@ img {
   right: 0;
   width: 260px;
   height: 100vh;
-  padding: 56px 40px;
+  padding: 48px;
   border-left: 1px solid var(--line);
   background: var(--bg);
   overflow-y: auto;
