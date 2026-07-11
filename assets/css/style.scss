@@ -81,7 +81,8 @@ img {
 
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr 1.3fr 1fr;
+  grid-template-columns: 1fr 1.7fr auto;
+  grid-template-rows: 1fr auto;
   min-height: 100vh;
 }
 
@@ -98,6 +99,10 @@ img {
 
 .home-col--about {
   border-right: 1px solid var(--line);
+}
+
+.home-col--nav {
+  padding: 40px;
 }
 
 .home-name {
@@ -237,6 +242,7 @@ img {
 @media (max-width: 900px) {
   .home-grid {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
 
   .home-col--intro,
@@ -246,6 +252,10 @@ img {
   }
 
   .home-col {
+    padding: 40px 28px;
+  }
+
+  .home-col--nav {
     padding: 40px 28px;
   }
 
