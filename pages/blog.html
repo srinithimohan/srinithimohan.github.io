@@ -4,4 +4,66 @@ title: Blog
 ---
 
 <h1>Blog</h1>
-<p>this blog is currently under construction 👷🏽‍♀️🛠️🧰 - please come back for updates!</p>
+<p>a few thoughts on what i'm building and learning — full posts live on <a href="https://srinithim.substack.com" target="_blank" rel="noopener">Substack</a>.</p>
+
+<div id="blog-posts" class="blog-list">
+  <p class="blog-status">loading posts…</p>
+</div>
+
+<script>
+(function () {
+  var FEED_URL = "https://srinithim.substack.com/feed";
+  var API_URL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(FEED_URL);
+  var POST_COUNT = 8;
+  var container = document.getElementById("blog-posts");
+
+  function stripHtml(html) {
+    var tmp = document.createElement("div");
+    tmp.innerHTML = html || "";
+    return tmp.textContent || tmp.innerText || "";
+  }
+
+  function formatDate(dateString) {
+    var date = new Date(dateString);
+    if (isNaN(date.getTime())) return "";
+    return date.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  }
+
+  function renderPost(item) {
+    var imgMatch = (item.content || "").match(/<img[^>]+src="([^"]+)"/);
+    var image = item.thumbnail || (imgMatch ? imgMatch[1] : "");
+    var snippet = stripHtml(item.description).trim();
+    if (snippet.length > 160) snippet = snippet.slice(0, 160).trim() + "…";
+
+    return (
+      '<a class="blog-post" href="' + item.link + '" target="_blank" rel="noopener">' +
+        (image ? '<div class="blog-post-image" style="background-image:url(\'' + image + '\')"></div>' : "") +
+        '<div class="blog-post-body">' +
+          '<span class="blog-post-date">' + formatDate(item.pubDate) + "</span>" +
+          '<h3 class="blog-post-title">' + item.title + "</h3>" +
+          '<p class="blog-post-snippet">' + snippet + "</p>" +
+        "</div>" +
+      "</a>"
+    );
+  }
+
+  fetch(API_URL)
+    .then(function (res) { return res.json(); })
+    .then(function (data) {
+      if (data.status !== "ok") throw new Error("feed error");
+
+      var items = (data.items || []).slice(0, POST_COUNT);
+
+      if (!items.length) {
+        container.innerHTML = '<p class="blog-status">no posts yet — check back soon!</p>';
+        return;
+      }
+
+      container.innerHTML = items.map(renderPost).join("");
+    })
+    .catch(function (err) {
+      container.innerHTML = '<p class="blog-status">couldn\'t load posts right now — try <a href="' + FEED_URL.replace("/feed", "") + '" target="_blank" rel="noopener">reading on Substack</a> instead.</p>';
+      console.error("blog feed error:", err);
+    });
+})();
+</script>

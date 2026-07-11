@@ -406,6 +406,81 @@ img {
   border-radius: var(--radius);
 }
 
+/* ---------- Blog (Substack feed) ---------- */
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.blog-status {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.blog-post {
+  display: flex;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  overflow: hidden;
+  color: var(--ink);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(28, 27, 25, 0.06);
+  text-decoration: none;
+}
+
+.blog-post-image {
+  flex: 0 0 140px;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--bg-alt);
+}
+
+.blog-post-body {
+  padding: 16px 18px;
+  flex: 1;
+  min-width: 0;
+}
+
+.blog-post-date {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.blog-post-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 17px;
+  margin: 4px 0 6px;
+  color: var(--ink);
+}
+
+.blog-post-snippet {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--muted);
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+  .blog-post {
+    flex-direction: column;
+  }
+
+  .blog-post-image {
+    flex-basis: auto;
+    height: 160px;
+    width: 100%;
+  }
+}
+
 @media (max-width: 720px) {
   .page-wrap {
     padding: 40px 18px 64px;
