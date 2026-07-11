@@ -13,10 +13,8 @@
     <main class="home-grid">
 
       <section class="home-col home-col--intro">
-        <div>
-          <h1 class="home-name">Srinithi Mohan</h1>
-          <p class="home-tagline">CS student, UNC-Chapel Hill.<br>building weird &amp; useful things.</p>
-        </div>
+        <h1 class="home-name">Srinithi Mohan</h1>
+        <p class="home-tagline">CS student, UNC-Chapel Hill.<br>building weird &amp; useful things.</p>
         {% include social-links.html %}
       </section>
 
@@ -34,21 +32,9 @@
         </ul>
       </section>
 
-      <section class="home-col home-col--nav">
-        <p class="eyebrow">explore</p>
-        <nav class="file-nav">
-          {% for item in site.data.navigation %}
-            {% unless item.link == '/index.html' %}
-              <a class="file-item" href="{{ item.link | relative_url }}">
-                {% include folder-icon.html %}
-                <span class="file-label">{{ item.name }}</span>
-              </a>
-            {% endunless %}
-          {% endfor %}
-        </nav>
-      </section>
-
-      <p class="home-footer">made with <span style="color: var(--rose);">&hearts;</span> by Srinithi Mohan &copy; 2026</p>
     </main>
+
+    {% include site-footer.html %}
+    {% include explore-nav.html %}
   </body>
 </html>

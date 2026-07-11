@@ -10,14 +10,11 @@
     {% include head-custom.html %}
   </head>
   <body>
-    {% include navigation.html %}
-
     <main class="page-wrap">
       {{ content }}
     </main>
 
-    <footer class="site-footer">
-      <p>made with <span style="color: var(--rose);">&hearts;</span> by Srinithi Mohan &copy; 2026</p>
-    </footer>
+    {% include site-footer.html %}
+    {% include explore-nav.html %}
   </body>
 </html>
