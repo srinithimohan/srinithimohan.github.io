@@ -28,14 +28,14 @@ a, img, ul, ol, li, table, tbody, tr, th, td, footer, header, nav, section, main
   --line: rgba(28, 27, 25, 0.1);
   --rose: #E0777D;
   --rose-dark: #b8555c;
-  --plum: #748067;
+  --plum: #6D597A;
   --slate: #355070;
-  --pill-rose-bg: #ffecf8;
-  --pill-rose-fg: #ae7398;
-  --pill-plum-bg: #edf9d5;
-  --pill-plum-fg: #90A959;
-  --pill-slate-bg: #e7f6fc;
-  --pill-slate-fg: #6494AA;
+  --pill-green-bg: #edf9d5;
+  --pill-green-fg: #90A959;
+  --pill-blue-bg: #e7f6fc;
+  --pill-blue-fg: #6494AA;
+  --pill-mauve-bg: #f9eef4;
+  --pill-mauve-fg: #8E7583;
   --radius: 14px;
   --font-display: 'Space Grotesk', 'Helvetica Neue', sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
@@ -127,23 +127,23 @@ img {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  border: 1px solid var(--line);
-  background: #fff;
+  border: 1px solid var(--rose-dark);
+  background: var(--rose);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.18s ease, border-color 0.18s ease;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
 }
 
 .social-btn:hover {
   transform: translateY(-2px);
-  border-color: var(--ink);
+  box-shadow: 0 6px 14px rgba(184, 85, 92, 0.25);
 }
 
 .social-btn svg {
   width: 18px;
   height: 18px;
-  fill: var(--ink);
+  fill: var(--rose-dark);
 }
 
 .eyebrow {
@@ -174,18 +174,18 @@ img {
   font-weight: 500;
   padding: 6px 14px;
   border-radius: 20px;
-  background: var(--pill-rose-bg);
-  color: var(--pill-rose-fg);
+  background: var(--pill-green-bg);
+  color: var(--pill-green-fg);
 }
 
 .pill:nth-child(3n+2) {
-  background: var(--pill-plum-bg);
-  color: var(--pill-plum-fg);
+  background: var(--pill-blue-bg);
+  color: var(--pill-blue-fg);
 }
 
 .pill:nth-child(3n) {
-  background: var(--pill-slate-bg);
-  color: var(--pill-slate-fg);
+  background: var(--pill-mauve-bg);
+  color: var(--pill-mauve-fg);
 }
 
 .file-nav {
