@@ -28,14 +28,14 @@ a, img, ul, ol, li, table, tbody, tr, th, td, footer, header, nav, section, main
   --line: rgba(28, 27, 25, 0.1);
   --rose: #E0777D;
   --rose-dark: #b8555c;
-  --plum: #6D597A;
+  --moss: #5F7A5C;
   --slate: #355070;
-  --pill-green-bg: #edf9d5;
-  --pill-green-fg: #90A959;
-  --pill-blue-bg: #e7f6fc;
-  --pill-blue-fg: #6494AA;
-  --pill-mauve-bg: #f9eef4;
-  --pill-mauve-fg: #8E7583;
+  --pill-mauve-bg: #F3E6E9;
+  --pill-mauve-fg: #B5657A;
+  --pill-moss-bg: #E4EBE3;
+  --pill-moss-fg: #5F7A5C;
+  --pill-slate-bg: #E1E8EE;
+  --pill-slate-fg: #355070;
   --radius: 14px;
   --font-display: 'Space Grotesk', 'Helvetica Neue', sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
@@ -127,30 +127,30 @@ img {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  border: 1px solid var(--rose-dark);
-  background: var(--rose);
+  border: 1px solid var(--line);
+  background: #E0777D;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  transition: transform 0.18s ease, border-color 0.18s ease;
 }
 
 .social-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(184, 85, 92, 0.25);
+  border-color: var(--ink);
 }
 
 .social-btn svg {
   width: 18px;
   height: 18px;
-  fill: var(--rose-dark);
+  fill: var(--ink);
 }
 
 .eyebrow {
   font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--plum);
+  color: var(--moss);
   margin-bottom: 10px;
   font-weight: 600;
 }
@@ -174,18 +174,18 @@ img {
   font-weight: 500;
   padding: 6px 14px;
   border-radius: 20px;
-  background: var(--pill-green-bg);
-  color: var(--pill-green-fg);
+  background: var(--pill-mauve-bg);
+  color: var(--pill-mauve-fg);
 }
 
 .pill:nth-child(3n+2) {
-  background: var(--pill-blue-bg);
-  color: var(--pill-blue-fg);
+  background: var(--pill-moss-bg);
+  color: var(--pill-moss-fg);
 }
 
 .pill:nth-child(3n) {
-  background: var(--pill-mauve-bg);
-  color: var(--pill-mauve-fg);
+  background: var(--pill-slate-bg);
+  color: var(--pill-slate-fg);
 }
 
 .file-nav {
@@ -212,7 +212,7 @@ img {
 .file-item .folder-icon {
   width: 60px;
   height: 60px;
-  color: var(--plum);
+  color: var(--moss);
   transition: color 0.18s ease, transform 0.18s ease;
 }
 
@@ -362,7 +362,7 @@ img {
 
 .project-tech {
   font-size: 12.5px;
-  color: var(--plum);
+  color: var(--moss);
 }
 
 .github-icon {
