@@ -128,7 +128,7 @@ img {
   height: 42px;
   border-radius: 50%;
   border: 1px solid var(--line);
-  background: #ecc4c6;
+  background: #f0d4d6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,13 +137,13 @@ img {
 
 .social-btn:hover {
   transform: translateY(-2px);
-  border-color: var(--ink);
+  border-color: var(--rose-dark);
 }
 
 .social-btn svg {
   width: 18px;
   height: 18px;
-  fill: var(--ink);
+  fill: var(--rose-dark);
 }
 
 .eyebrow {
