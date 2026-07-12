@@ -28,7 +28,7 @@ a, img, ul, ol, li, table, tbody, tr, th, td, footer, header, nav, section, main
   --line: rgba(28, 27, 25, 0.1);
   --rose: #E0777D;
   --rose-dark: #b8555c;
-  --moss: #5F7A5C;
+  --moss: #6D597A;
   --slate: #355070;
   --pill-mauve-bg: #F3E6E9;
   --pill-mauve-fg: #B5657A;
@@ -128,7 +128,7 @@ img {
   height: 42px;
   border-radius: 50%;
   border: 1px solid var(--line);
-  background: #E0777D;
+  background: #ecc4c6;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -137,13 +137,13 @@ img {
 
 .social-btn:hover {
   transform: translateY(-2px);
-  border-color: var(--rose-dark);
+  border-color: var(--ink);
 }
 
 .social-btn svg {
   width: 18px;
   height: 18px;
-  fill: var(--rose-dark);
+  fill: var(--ink);
 }
 
 .eyebrow {
