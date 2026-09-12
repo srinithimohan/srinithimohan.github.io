@@ -90,6 +90,7 @@ img {
 
 .home-col {
   padding: 56px 40px;
+  min-width: 0;
 }
 
 .home-col--intro {
@@ -193,8 +194,6 @@ img {
 .marquee {
   overflow: hidden;
   width: 100%;
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
-  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
 }
 
 .marquee-track {
