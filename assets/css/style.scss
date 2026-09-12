@@ -84,7 +84,7 @@ img {
 
 .home-grid {
   display: grid;
-  grid-template-columns: 1fr 1.7fr;
+  grid-template-columns: 1.3fr 1.4fr;
   flex: 1;
 }
 
@@ -212,7 +212,7 @@ img {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(-25%);
   }
 }
 
